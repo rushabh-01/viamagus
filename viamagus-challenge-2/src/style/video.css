@@ -1,0 +1,30 @@
+.video-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  /* background-color: black; */
+}
+
+
+.thumbnail-container {
+  display: flex;
+  padding: 10px 0;
+  width: 1000px; /* Set a fixed width for the container */
+  overflow-x: scroll;
+  margin: 70px 0 0;
+  scroll-behavior: smooth;
+}
+
+
+
+.thumbnail {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 10px;
+  block-size: auto !important;
+  cursor: pointer;
+}

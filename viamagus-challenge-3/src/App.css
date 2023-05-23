@@ -1,0 +1,48 @@
+.input-style{
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: darkgray;
+  align-items: center;
+}
+
+.navbar ul{
+  display: flex;
+  padding: 0;
+  gap: 100px;
+}
+
+.navbar ul li{
+  list-style: none;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px;
+}
