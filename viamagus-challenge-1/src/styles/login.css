@@ -88,3 +88,21 @@
   .or-text{
     margin: 0 0 16px 0;
   }
+
+
+  @media (max-width:768px){
+    .login-form{
+      width: auto;
+      position: unset;
+      transform: unset;
+    }
+    .login-form-container{
+      padding: 10px 66px;
+    }
+  }
+
+  @media (max-width:400px){
+    .login-form-container{
+      padding: 10px 36px;
+    }
+  }

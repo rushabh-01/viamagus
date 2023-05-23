@@ -9,12 +9,13 @@
   justify-content: space-between;
   background-color: darkgray;
   align-items: center;
+  padding: 0 10px;
 }
 
 .navbar ul{
   display: flex;
   padding: 0;
-  gap: 100px;
+  gap: 60px;
 }
 
 .navbar ul li{
@@ -23,7 +24,7 @@
 
 .navbar ul li a{
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 30px;
   font-weight: bolder;
 }
@@ -45,4 +46,17 @@ h1{
   justify-content: center;
   align-items: center;
   margin: 150px;
+}
+
+@media(max-width:768px){
+  .container{
+    width: auto;
+  }
+  .navbar ul{
+    display: flex;
+    padding: 0;
+    gap: 60px;
+    justify-content: space-between;
+    width: 100%;
+  } 
 }

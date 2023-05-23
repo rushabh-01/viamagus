@@ -1,25 +1,17 @@
 import React from 'react';
-import { Route, Routes, Link, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import DatePage from './DatePage';
 import './App.css';
+import Navbar from './Navbar';
 
 function App() {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
 
+
   return (
     <div>
-      <nav className="navbar">
-        <h1>Navbar</h1>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/date">Date</Link>
-          </li>
-        </ul>
-      </nav>
+      <Navbar/>
 
       {isHomePage && <h1 className="center">React Date Calculation Page</h1>}
 

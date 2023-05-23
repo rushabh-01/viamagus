@@ -11,20 +11,38 @@
 .thumbnail-container {
   display: flex;
   padding: 10px 0;
-  width: 1000px; /* Set a fixed width for the container */
+  width: 600px; /* Set a fixed width for the container */
   overflow-x: scroll;
   margin: 70px 0 0;
   scroll-behavior: smooth;
 }
 
+.thumbnail-container-mobile{
+  display: block;
+  margin:20px 20px 20px 40px;
+}
+
 
 
 .thumbnail {
-  width: 50px !important;
+  min-width: 50px !important;
+  max-width: 50px !important;
   height: 50px !important;
   object-fit: cover;
   border-radius: 50%;
   margin: 0 10px;
-  block-size: auto !important;
   cursor: pointer;
+}
+
+
+@media(max-width:768px){
+  .video-container{
+    width: auto;
+  }
+  video{
+    width: 350px !important;
+  }
+  .thumbnail{
+    margin: 10px;
+  }
 }
